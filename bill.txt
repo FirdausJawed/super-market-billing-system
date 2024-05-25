@@ -1,4 +1,9 @@
-milk : 22 : 2
+cake : 30 : 40
 
-cake : 40 : 3
+face : 0 : 40
+
+
+face_wash : 30 : 50
+
+honey : 50 : 20
 
