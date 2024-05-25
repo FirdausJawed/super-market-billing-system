@@ -1,9 +1,12 @@
-cake : 30 : 40
+face_wash : 30 : 48
 
-face : 0 : 40
+honey : 50 : 19
 
+aloevera : 99 : 10
 
-face_wash : 30 : 50
+soy_bean : 50 : 20
 
-honey : 50 : 20
+kajal : 99 : 5
+
+cake : 40 : 20
 

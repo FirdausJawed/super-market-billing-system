@@ -102,6 +102,7 @@ void addItem(Bill &b)
 
 void printBill()
 {
+      system("cls");
       int cnt = 0;
       bool exit = false;
       while (!exit)
@@ -113,9 +114,8 @@ void printBill()
 
             if (choice == 1)
             {
-                  system("cls");
                   string item;
-                  int rate, quantity;
+                  int quantity;
                   cout << "Enter the item name" << endl;
                   cin >> item;
                   cout << "Enter the quantity of the item" << endl;
@@ -140,7 +140,7 @@ void printBill()
                         if (item == itemName)
                         {
                               found = true;
-                              if (quantity == itemQuantity)
+                              if (quantity <= itemQuantity)
                               {
                                     int amt = itemRate * itemQuantity;
                                     cout << "item | rate | quantity | amount " << endl;
@@ -160,7 +160,7 @@ void printBill()
                         else
                         {
                               // not found
-                              out << line<<endl;
+                              out << line << endl;
                         }
                   }
                   if (!found)
@@ -172,7 +172,7 @@ void printBill()
                   remove("C:\\Users\\FIRDAUS JAWED\\Desktop\\billing super market\\bill.txt");
                   rename("C:\\Users\\FIRDAUS JAWED\\Desktop\\billing super market\\bill_temp.txt", "C:\\Users\\FIRDAUS JAWED\\Desktop\\billing super market\\bill.txt");
             }
-            else if(choice ==2)
+            else if (choice == 2)
             {
                   exit = true;
                   cout << "counting total bill" << endl;
@@ -180,7 +180,8 @@ void printBill()
             Sleep(1000);
       }
       system("cls");
-      cout<<endl<<endl;
+      cout << endl
+           << endl;
       cout << "Total Bill ________ : " << cnt << endl;
       cout << "Thanks fro shopping!!" << endl;
       Sleep(1000);
@@ -206,9 +207,11 @@ int main()
                   addItem(b);
                   Sleep(1000);
             }
-            else if(val == 2)
+            else if (val == 2)
             {
+                  system("cls");
                   printBill();
+                  Sleep(1000);
             }
             else if (val == 3)
             {
